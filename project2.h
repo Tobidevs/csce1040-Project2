@@ -10,7 +10,7 @@ struct Node {
   Node(const Account& acc) : account(acc), next(nullptr) {}
 };
 
-
+void displayMenu();
 void openAccount(Node*& head);
 void depositToAccount(Node* head);
 void withdrawFromAccount(Node* head);

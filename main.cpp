@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    std::vector<Account> accounts;
+    Node* head = nullptr;
     int choice;
 
     std::cout << "Name: Tobi Akere\n";
@@ -17,24 +17,23 @@ int main() {
 
         switch (choice) {
             case 1:
-                openAccount(accounts);
+                openAccount(head);
                 break;
             case 2:
-                depositToAccount(accounts);
+                depositToAccount(head);
                 break;
             case 3:
-                withdrawFromAccount(accounts);
+                withdrawFromAccount(head);
                 break;
             case 4:
-                printAllAccounts(accounts);
+                printAllAccounts(head);
                 break;
             case 5:
+                deleteAllAccounts(head);
                 std::cout << "Exiting program. Goodbye!\n";
                 return 0;
             default:
                 std::cout << "Invalid choice. Please try again.\n";
         }
     }
-
-    return 0;
 }
