@@ -12,6 +12,8 @@ void displayMenu() {
     std::cout << "5. End transaction (Exit)\n";
     std::cout << "Enter your choice: ";
 }
+void displayMenu() {
+}
 
 // open a new account
 void openAccount(Node*& head) {
